@@ -1,0 +1,46 @@
+body {
+  background-color: #1c1c1c;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-family: 'Overpass', sans-serif;
+  font-size: 50px;
+  margin-top: 3em;
+}
+
+h2 {
+  color: #FFFFFF;
+  font-family: 'Overpass', sans-serif;
+  font-size: 20px;
+  margin-top: -55px;
+
+}
+
+.logo {
+  height: 400px;
+  width: 400px;
+  margin-top: -105px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.btn {
+    background: linear-gradient(45deg, #857000, #FFD700);
+	color: #FFFFFF;
+	border: 0;
+	width: 25em;
+    height: 2.5em;
+	padding: 0.5em 1.5em;
+	border-radius: 2em;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn:hover {
+    transform: scale(1.10);
+	background-color: #171717;
+	animation-duration: 0.5s;
+}
