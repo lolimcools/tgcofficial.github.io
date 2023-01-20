@@ -469,7 +469,7 @@ setTimeout(() => {
     document.querySelector('div.loaded-overlay').style.display = 'block';
     console.log("%cSite Status", "font-family: arial; color: white; text-shadow: 1px 1px limegreen; border: 1px solid limegreen; font-weight: 600; background: #333; padding: 5px 10px; border-radius: 10px;", "Loaded Successfully!");
     SnackBar({
-      message: "Game Loaded!",
+      message: "TGC Loaded!",
       status: 'success',
       theme: 'darker',
       position: "br",
