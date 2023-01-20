@@ -1,5 +1,6 @@
 # tgcofficial.github.io
 <img src="https://socialify.git.ci/tgcofficial/tgcofficial.github.io/image?description=1&descriptionEditable=The%20best%20unblocked%20game%20site&font=Inter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2FHilfig3rStorage%2FImages%2Fmain%2Fnewyearslogo.png&name=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark" alt="tgcofficial.github.io" width="640" height="320" />
+  <img src="https://komarev.com/ghpvc/?username=github.com/tgcofficial/tgcofficial.github.io&label=Project Visitors&color=9D36F7&style=flat" alt="tgcofficial" />
 <br>
 
 
