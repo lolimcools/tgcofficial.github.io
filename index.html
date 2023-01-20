@@ -9,87 +9,213 @@
   <link rel="icon" type="image/png" href="https://github.com/Hilfig3rStorage/Images/blob/main/newyearslogo.png?raw=true" />
   <script src="https://kit.fontawesome.com/8df7d40c3b.js" crossorigin="anonymous"></script>
 </head>
-    <script>
-        function openinblank() {
-            win = window.open();
-            win.document.body.style.margin = "0";
-            win.document.body.style.height = "100vh";
-            var iframe = win.document.createElement("iframe");
-            iframe.style.border = "none";
-            iframe.style.width = "100%";
-            iframe.style.height = "100%";
-            iframe.style.margin = "0";
-            iframe.referrerpolicy = "no-referrer";
-            iframe.allow = "fullscreen";
-            iframe.src = window.location.href;
-            win.document.body.appendChild(iframe);
-        }
-    </script>
 <body>
    <!-- Navigation Bar -->
   <nav class="bar" id="nav">
     <!-- Site Header -->
-    <h2>The Game Collection</a>
-   <!-- Navigation Bar Toggle -->
+    <h2>The Game Collection</h2>
+    <!-- Navigation Bar Toggle -->
     <a class="updown" id="updown" onclick="b=!b; xd()"><i id='ud' class="fa fa-fw fa-angle-double-up"></i></a>
-    <a class="active"><i class="fa fa-fw fa-home"></i></a>
-    <a href="about.html" data-tippy-content="About"><i class="fa fa-fw fa-info-circle"></i></a>
+        <a href="games.html" data-tippy-content="Settings"><i class="fa fa-fw fa-gear"></i></a>
     <a href="games.html" data-tippy-content="Games"><i class="fa fa-fw fa-gamepad"></i></a>
-    <!-- Options Dropdown -->
-    <div class="has-dropdown"> 
-      <button id="settings" data-tippy-content="Settings"><i class="fa fa-fw fa-gear"></i></button>
-      <ul class="dropdown">
-        <li class="dropdown-item">
-          <a onclick="theme('red', this)" href="#">Red</a>
-        </li>
-        <li class="dropdown-item">
-          <a onclick="theme('rgb(50, 150, 255)', this)" href="#" class="active">Blue</a>
-        </li>
-        <li class="dropdown-item">
-          <a onclick="theme('limegreen', this)" href="#">Green</a>
-        </li>
-        <li class="dropdown-item">
-          <input type="color" id="thmclr"> 
-          <a href="#" data-custom onclick="theme('white', this, true)">Custom</a>
-        </li>
-      </ul>
     </div>
-    <a href="bookmarklets.html" data-tippy-content="Bookmarklets"><i class="fa fa-fw fa-bookmark"></i></a>
-    <a href="chat.html" data-tippy-content="Chat"><i class="fa fa-fw fa-wechat"></i></a>
-    <a href="https://discord.gg/V49EfgSWgr" data-tippy-content="Discord"><i class="fab fa-discord"></i></a>
-    <a href="ide.html" data-tippy-content="IDE"><i class="fa fa-fw fa-code"></i></a>
+    <a class="active"><i class="fa fa-fw fa-home"></i></a>
+  </nav>
   <!-- Main Loader CSS -->
          
   <!-- Loader -->
   
   <!-- Main Loader CSS -->
 <a href="#" data-custom onclick=""></a>
-<link rel="stylesheet" href="css/mainmonthcolor.css" />
+<link rel="stylesheet" href="https://hilfig3rstorage.github.io/tgcstorage/css/mainloadermonthcolorcss.css" />
   <div class="loader">
     <div class="loader-logo">
     
 <!-- Month Logo -->
 	    
 <iframe src="https://hilfig3rstorage.github.io/tgcstorage/loader/monthlogodesign.index.html" frameBorder="0"></iframe>
-
 <!-- End of Month logo -->
-
 </div>
     <div class="loader-bar"></div>
   </div>
   <div class="loaded-overlay"></div>
   
   <!-- JS for loader-->
-<script src="js/gameloader.js"></script>
-
+<script src="js/loader.js"></script>
   <!-- End Of Loader -->
-  
+
   <!-- Page Contents -->
-
-
-
-  <!-- JS Scripts -->
-  <script src="js/updown.js"></script>
- <!-- <script src="https://tgcofficial.github.io/enbed/blocker.js"></script> -->
+  <link rel="stylesheet" href="css/maingame.css" /> 
+</a>
+</div>
+</div>
+<div id="gameframe">
+<div class="ad">
+<div class="adsrc">
+</div>
+</div>
+<div class="gameDisplay">
+<div class="game">
+<!-- Game Link For IFrame -->
+<iframe id="iframe" src="https://glitchyeet.github.io/TGC-Storage/G-Storage/retrobowl.index.html"></iframe>
+</div>
+<div class="options">
+<div class="left">
+<!-- Icon For Game -->
+<img src="https://pbs.twimg.com/profile_images/1217942835527409665/swRMqEkK_400x400.jpg" alt="GameIcon" class="gameicon"></a>
+<!-- Title For Game -->
+<h1 class="Title">Retro Bowl</h1>
+<script src="https://use.fontawesome.com/fe459689b4.js"></script>
+  <button class="btn" id="green"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i></button>
+  <button class="btn" id="red"><i class="fa fa-thumbs-down fa-lg" aria-hidden="true"></i></button>
+  
+  
+<!-- Fullscreen Game Button -->
+</div>
+<div class="right">
+<button1 type="fullscreen"> <img src="https://raw.githubusercontent.com/hilfig3r/images/main/fullscreen.webp" class="fullscreenbtn" border="0" />
+      </button1> <script> var urlObj = new window.URL(window.location.href);
+      
+ var url = "https://glitchyeet.github.io/TGC-Storage/G-Storage/retrobowl.index.html";
+ 
+ if (url) {
+     var win;
+     document.querySelector('button1').onclick = function() {
+         if (win) {
+             win.focus();
+        }
+         else {
+             win = window.open();
+             win.document.body.style.margin = '0';
+             win.document.body.style.height = '100vh';
+             var iframe = win.document.createElement('iframe');
+             iframe.style.border = 'none';
+             iframe.style.width = '100%';
+             iframe.style.height = '100%';
+             iframe.style.margin = '0';
+             iframe.src = url;
+             win.document.body.appendChild(iframe);
+        }
+    }
+    ;
+}
+ </script> 
+ 
+ <!-- Fullscreen CSS -->
+ 
+ <style> 
+.fullscreenbtn {
+  border-radius:5px;
+  height: 25px;
+  width: 25px;
+  margin-right: 15px;
+  margin-top: 42px;
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+  box-shadow:0 6px 12px 0 rgba(0,0,0,.24);
+}
+.fullscreenbtn:hover {
+  width: 25px;
+  transform: rotate(-10deg);
+  
+}
+</style> 
+<!-- Like/Dislike JS -->
+<script>
+var btn1 = document.querySelector('#green');
+var btn2 = document.querySelector('#red');
+btn1.addEventListener('click', function() {
+  
+    if (btn2.classList.contains('red')) {
+      btn2.classList.remove('red');
+    } 
+  this.classList.toggle('green');
+  
+});
+btn2.addEventListener('click', function() {
+  
+    if (btn1.classList.contains('green')) {
+      btn1.classList.remove('green');
+    } 
+  this.classList.toggle('red');
+  
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- anti-close toggle -->
+<div class="adsrc" style="text-align:center;">
+<!-- Main Anti-Close CSS -->
+<link rel="stylesheet" href="https://hilfig3rstorage.github.io/tgcstorage/css/anticlosecss.css" />
+<div id="anticlose">
+<h1>Anti-Close</h1>
+        
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+  <!-- script -->
+      <script language="JavaScript">
+    window.onbeforeunload = confirmExit;
+    function confirmExit() {
+        return "TGC Anti-Close";
+    }
+</script>
+</label>
+</body>
+</html> 
+</div>
+</div>
+<!-- end of anti-close toggle -->
+<div class="adsrc" style="text-align:center;">
+<!-- recommended games -->
+<div id="moregames">
+<h1>Recommended Games</h1>
+<!--          1          -->
+        <a href="https://sites.google.com/k12.friscoisd.org/tgcofficial/games/getaway-shootout" class="recogamebutton">
+          <img src="https://raw.githubusercontent.com/hilfig3r/images/main/Shootout.png" alt="Getaway Shootout" loading="lazy" width="110" height="110" decoding="async" class="recogamebutton">
+        </a>
+        
+<!--          2          -->
+        
+        <a href="https://sites.google.com/k12.friscoisd.org/tgcofficial/games/blumgi-ball" class="recogamebutton">
+          <img src="https://raw.githubusercontent.com/hilfig3r/images/main/5cc06f22e46c13e1c7917dad7c48e5dd.avif" alt="Blumgi Ball" loading="lazy" width="110" height="110" decoding="async" class="recogamebutton">
+        </a>
+        
+<!--          3          -->
+        
+        <a href="https://sites.google.com/k12.friscoisd.org/tgcofficial/games/papas-pancakeria" class="recogamebutton">
+          <img src="https://play-lh.googleusercontent.com/XlLsfjkSSgvSVFBn4ibANIW-Cj7Fg92NyJTHIp9vKTASgU0k4n7uXmqLNeBkx1UdKg" alt="Papa's Pancakeria" loading="lazy" width="110" height="110" decoding="async" class="recogamebutton">
+        </a>
+        
+<!--          4          -->
+        
+        <a href="https://sites.google.com/k12.friscoisd.org/tgcofficial/games/idle-startup-tycoon" class="recogamebutton">
+          <img src="https://raw.githubusercontent.com/Hilfig3rStorage/Images/main/hvtrs8_-iog%2Cpmkk.aoo_adl-agk_kmcgg_suclkt%7B%3D58.wkdvh_620.hgiehv%3D402%2Cdiv%3Daotep%2Cd%3Dcuvo-212g9_0%3B7%60a%3B9d2_5%3B96c35601539faa.avif" alt="Idle Startup Tycoon" loading="lazy" width="110" height="110" decoding="async" class="recogamebutton">
+        </a>
+        
+<!--          End          -->
+</div>
+</div>
+<!-- TGC Background -->
+<div class="threearrow">
+                        <div style="background-position: center;width:100%;    text-align: center; height:1080px; position:relative;z-index:5; z-index:5; background-image:url(https://github.com/hilfig3r/images/blob/main/betterwavetgc.png?raw=true);">
+                        
+<!-- Website Visits -->
+                        
+<h1 class="WebText">↓ Website Visits ↓</h1>
+     <div align='center'><a href='https://www.free-website-hit-counter.com'><img src='https://www.free-website-hit-counter.com/c.php?d=8&id=137831&s=8' border='0'</div>
+                   
+</div>
+</div>
+<!-- Game Page End -->
+</body>
+</html>
+  <!-- Scripts -->
+  <script src="updown.js"></script>
+ <script src="enbed/blocker.js"></script>
 </body>
 </html>
