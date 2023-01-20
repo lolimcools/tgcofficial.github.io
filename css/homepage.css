@@ -1,0 +1,282 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	animation-duration: 0.01ms !important;
+	animation-iteration-count: 1 !important;
+	scroll-behavior: auto !important;
+}
+
+* {
+	margin: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+ background-image: url(https://bigfootshack.pages.dev/images/GBACKGROUND.png);
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ /*overflow-y: hidden;*/
+
+}
+
+html:focus-within {
+	scroll-behavior: auto;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeSpeed;
+  background-color: #1c1c1c;
+  background-image: url(https://github.com/hilfig3r/images/blob/main/betterwavetgc.png?raw=true);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 2000px 100%;
+  /*overflow-y: hidden;*/
+}
+
+img {
+	display: block;
+	pointer-events: none;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+	overflow-wrap: break-word;
+}
+
+#root,#__next {
+	isolation: isolate;
+}
+
+:root {
+	/* Primary Colors */
+	--Violet: rgb(45, 28, 14);
+	--Soft-Magenta: rgb(88, 88, 88);
+	--white: #fff;
+
+	/* Font Size */
+	--head: 3rem;
+	--text: 1.3rem;
+
+	/* Font Weight */
+	--regular: 400;
+	--bold: 600;
+}
+
+
+.head {
+	font-size: var(--head);
+	font-weight: var(--bold);
+	color: var(--white);
+	font-family: "Poppins", sans-serif;
+}
+
+.text {
+	font-size: var(--text);
+	font-weight: var(--regular);
+	color: var(--white);
+	font-family: "Open Sans", sans-serif;
+}
+
+
+
+.background {
+	min-height: 100vh;
+	
+	overflow: auto;
+	padding: 0 4em;
+}
+
+.container {
+	margin: 0 auto 2em auto;
+	max-width: 1800px;
+}
+
+.hero {
+	margin: 0 0 0 0;
+	display: flex;
+	gap: 6em;
+
+}
+
+.hero-img {
+	flex-basis: 55%;
+}
+
+.mockup {
+	width: 100%;
+}
+
+.hero-text {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
+	align-self: center;
+	max-width: 35em;
+}
+
+.btn {
+	background-color: var(--white);
+	color: #171717;
+	border: 0;
+	width: 20em;
+	padding: 0.5em 1.5em;
+	border-radius: 2em;
+	box-shadow: 5px 5px 10px 0px rgba(63, 63, 63, 0.86);
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn:hover {
+	color: var(--white);
+	background-color: #171717;
+	animation-duration: 0.5s;
+}
+
+.socials {
+	display: flex;
+	gap: 1em;
+	justify-content: flex-end;
+}
+
+.social-btn {
+	border: 2px solid var(--white);
+	border-radius: 100%;
+	background: transparent;
+	width: 3em;
+	height: 3em;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1.5em;
+}
+
+	.mockup {
+		height: 70vh;
+		width: 70vh;
+		
+	}
+
+	.hero-text {
+		max-width: 30em;
+	}
+}
+
+@media (min-width: 200px) and (max-width: 975px) {
+	:root {
+		--head: 2rem;
+		--text: 1rem;
+	}
+
+	.background {
+		min-height: 100vh;
+        background-color: var(--Violet);
+        background-repeat: no-repeat;
+        background-size: 100% 60%;
+        background-repeat: no-repeat;
+        background-position: top;
+        overflow: auto;
+        padding: 0 2em;
+       
+	}
+
+	.container {
+		margin: 2em 0 1em 0;
+	}
+
+	.logo {
+		width: 12em;
+	}
+
+	.hero {
+		flex-direction: column;
+		margin: 3em 0 2em 0;
+	}
+	.hero-text {
+		text-align: center;
+	}
+
+	.btn {
+		margin: 0 auto;
+	}
+
+	.socials {
+		justify-content: center;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+	:root {
+		--head: 2.5rem;
+		--text: 1.2rem;
+	}
+}
+
+ .footer {
+     color: #ffffff;
+     background-color: #171717;
+    /* Black background */
+     font-family: sans-serif;
+     width: 100vw;
+     padding-top: 20px;
+     padding-bottom: 40px;
+     z-index: 9999999999999999999999999999;
+}
+
+ .footer a:link {
+     color: white;
+     background-color: transparent;
+}
+ .footer a:visited {
+     color: white;
+     background-color: transparent;
+     text-decoration: none;
+}
+
+ .footer a:hover {
+     color: white;
+     background-color: transparent;
+}
+ .footer a:active {
+     color: grey;
+     background-color: transparent;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/anton/v23/1Ptgg87LROyAm3K8-C8QSw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/anton/v23/1Ptgg87LROyAm3K9-C8QSw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/anton/v23/1Ptgg87LROyAm3Kz-C8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
