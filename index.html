@@ -30,26 +30,34 @@
   <nav class="bar" id="nav">
     <!-- Site Header -->
     <h2>The Game Collection</a>
-    <!-- Navigation Bar Toggle -->
+   <!-- Navigation Bar Toggle -->
     <a class="updown" id="updown" onclick="b=!b; xd()"><i id='ud' class="fa fa-fw fa-angle-double-up"></i></a>
-  <!-- Options Dropdown -->
+    <a class="active"><i class="fa fa-fw fa-home"></i></a>
+    <a href="about.html" data-tippy-content="About"><i class="fa fa-fw fa-info-circle"></i></a>
+    <a href="games.html" data-tippy-content="Games"><i class="fa fa-fw fa-gamepad"></i></a>
+    <!-- Options Dropdown -->
     <div class="has-dropdown"> 
       <button id="settings" data-tippy-content="Settings"><i class="fa fa-fw fa-gear"></i></button>
       <ul class="dropdown">
         <li class="dropdown-item">
-          <a id="buttonclick" onclick="openinblank()" href="#">AB Cloak</a>
+          <a onclick="theme('red', this)" href="#">Red</a>
         </li>
         <li class="dropdown-item">
           <a onclick="theme('rgb(50, 150, 255)', this)" href="#" class="active">Blue</a>
         </li>
         <li class="dropdown-item">
-
           <a onclick="theme('limegreen', this)" href="#">Green</a>
         </li>
-          <a href="games.html" data-tippy-content="Games"><i class="fa fa-fw fa-gamepad"></i></a>
+        <li class="dropdown-item">
+          <input type="color" id="thmclr"> 
+          <a href="#" data-custom onclick="theme('white', this, true)">Custom</a>
+        </li>
+      </ul>
     </div>
-    <a class="active"><i class="fa fa-fw fa-home"></i></a>
-  </nav>
+    <a href="bookmarklets.html" data-tippy-content="Bookmarklets"><i class="fa fa-fw fa-bookmark"></i></a>
+    <a href="chat.html" data-tippy-content="Chat"><i class="fa fa-fw fa-wechat"></i></a>
+    <a href="https://discord.gg/V49EfgSWgr" data-tippy-content="Discord"><i class="fab fa-discord"></i></a>
+    <a href="ide.html" data-tippy-content="IDE"><i class="fa fa-fw fa-code"></i></a>
   <!-- Main Loader CSS -->
          
   <!-- Loader -->
