@@ -1,0 +1,295 @@
+html{
+    overflow-x:hidden
+}
+#gameframe{
+    margin-top:120px;
+    margin-bottom:120px;
+    width:100vw;
+    display:flex
+}
+#gameframe .gameDisplay{
+    margin:auto;
+    width:92vw;
+    height:90vh;
+    background-color:#171717;
+    border-radius:5px;
+    overflow:hidden
+}
+
+#gameframe .game{
+    margin:auto;
+    width:100%;
+    height:80vh;
+    background-color:#171717;
+    background-repeat:no-repeat;
+    background-position:center;
+    overflow:hidden
+}
+#gameframe .game iframe{
+    width:100%;
+    height:100%;
+    border:none
+}
+#gameframe .options{
+    margin:auto;
+    width:100%;
+    height:4vh;
+    background-color:var(--accent-color);
+    display:flex;
+    align-items:center;
+    padding-bottom:1.5vh
+}
+#gameframe .options .left,#gameframe .options .right{
+    width:50%;
+    height:100%
+}
+#gameframe .options .left{
+    display:flex;
+    align-items:center
+}
+#gameframe .options .left .game-button{
+    margin-left:1vw;
+    height:70%
+}
+#gameframe .options .left .text-button{
+    margin-left:1vw;
+    height:100%
+}
+#gameframe .undertext{
+    height:70%
+}
+#gameframe .undertext div{
+    position:absolute;
+    margin-left:1.25vw;
+    color:#fff;
+    font-family:rubik;
+    font-size:12px;
+    text-shadow:var(--dark-color) 1px 0 10px;
+    width:1.25vw;
+    text-align:center
+}
+#gameframe .options .right{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end
+}
+#gameframe .options .right .game-button{
+    float:right;
+    margin-right:1vw;
+    height:70%
+}
+.game-button,.text-button{
+    position:relative;
+    background-color:transparent;
+    border:none;
+    cursor:pointer;
+    transition:.1s
+}
+.game-button:hover,.text-button:hover{
+    transform:scale(1.125)
+}
+.game-button img,.text-button img{
+    height:100%
+}
+.button-effect-a:after{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-35px 0 0 -35px;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:rgba(255,255,255,.2);
+    opacity:0
+}
+
+#moregames{
+    margin:auto;
+    border-radius:5px;
+    width:70vw;
+    height:220px;
+    background-color: #171717;
+    margin-bottom:10vh
+    
+}
+#moregames h1{
+    color: #FFFF;
+    padding-left:1vw;
+    padding-top:1vh
+}
+
+#moregames .gamesDiv{
+    margin:auto;
+    width:97%;
+    height:50%;
+    display:flex;
+    flex:1;
+    justify-content:center;
+    flex-wrap:wrap;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    padding:15px;
+    gap:2vw;
+    margin-right:4vw;
+    margin-bottom:5vh
+}
+#gameDiv{
+    min-width:225px;
+    max-width:225px;
+    max-height:120px;
+    min-height:120px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius:25px;
+    text-align:center;
+    transition:.1s
+}
+#gameDiv:hover{
+    cursor:pointer;
+    transform:scale(1.04)
+}
+#gameDiv{
+    position:relative
+}
+#gameDiv .innerGameDiv{
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:17px;
+    font-family:rubik;
+    font-weight:700;
+    color:var(--light-color);
+    opacity:0;
+    visibility:hidden;
+    -webkit-transition:visibility 0s,opacity .2s linear;
+    transition:visibility 0s,opacity .2s linear
+}
+#gameDiv:hover div{
+    visibility:visible;
+    opacity:1;
+    text-shadow:var(--dark-color) 1px 0 10px
+}
+
+@import 'https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Rubik&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Spline+Sans:wght@500&display=swap';
+:root{
+    --light-color: #ffffff;
+    --background-color: #1c1c1c;
+    --dark-color: #000000;
+    --accent-color: #171717;
+    --dark-accent: #1c1c1c;
+    --box-shadow-color: #ccc;
+    --error-color: #cf1a32
+}
+[theme=dark]{
+    --light-color: #000000;
+    --dark-color: #ffffff;
+    --box-shadow-color: #000000
+}
+html{
+    overflow-x:hidden;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
+.error{
+    color:var(--error-color)
+}
+body{
+    padding:0;
+    margin:0;
+    background-color: #1d1d1d;
+}
+h1,h2,h3,h4,p2,a,li,label{
+    font-family: 'Overpass', sans-serif;
+}
+
+.gameicon {
+	height: 40px;
+	width: 40px;
+	margin-left: 10px;
+    margin-top: 40px;
+    border-radius:8px;
+    box-shadow:0 6px 12px 0 rgba(0,0,0,.24);
+}
+
+.Title {
+	font-size: 24px;
+	color: #FFFF;
+    margin-left: 10px;
+    margin-top: 58px;
+	font-family: 'Overpass', sans-serif;
+}
+
+.WebText {
+	font-size: 20px;
+	color: #FFFF;
+    margin-top: 100px;
+	font-family: 'Overpass', sans-serif;
+}
+
+button{
+  cursor: pointer;
+  color: #FFF;
+  border-radius:5px;
+  height: 40px;
+  width: 40px;
+  background-color: #171717;
+  border: 2px solid #171717;
+  border-bottom: none;
+  margin-left: 10px;
+  margin-top: 38px;
+}
+
+.RecoName{
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:17px;
+    font-family: 'Overpass', sans-serif;
+    font-weight:700;
+    color:var(--light-color);
+    opacity:0;
+    visibility:hidden;
+    -webkit-transition:visibility 0s,opacity .2s linear;
+    transition:visibility 0s,opacity .2s linear
+    
+   
+}
+
+.recogamebutton {
+  border-radius:15px;
+  height: 110px;
+  width: 110px;
+  margin-top: 10px;
+  box-shadow:0 6px 12px 0 rgba(0,0,0,.24);
+  transition: transform .4s ease-in-out;
+}
+
+.recogamebutton:hover {
+  transform: scale(1.05);
+}
+
+.green{
+  color: green;
+}
+
+.red{
+  color: red;
+}
+
+ .threearrowimg {
+     width: 49px;
+     height: 25px;
+     position: absolute;
+     bottom: -1516px;
+     margin-left: 50%;
+     margin-right: 50%;
+     display: block;
+     right: 0px;
+     z-index: 0;
+}
