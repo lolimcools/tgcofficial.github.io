@@ -1,0 +1,20 @@
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #857000, #FFD700);
+  border-radius:15px;
+}
+
+
+div.loader-bar {
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(45deg, #857000, #FFD700);
+  border-radius: 5px;
+  filter: drop-shadow(0 0 5px #1c1c1c);
+  animation: loader-bar-animation 1.5s linear forwards;
+}
+
+img.loader-logo-image {
+  width: 135px;
+  height: 135px;
+  filter: drop-shadow(1px -1px 5px #FFD700) 
+}
