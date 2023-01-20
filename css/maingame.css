@@ -9,7 +9,7 @@ html{
 }
 #gameframe .gameDisplay{
     margin:auto;
-    width:80vw;
+    width:75vw;
     height:90vh;
     background-color:#171717;
     border-radius:5px;
