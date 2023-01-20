@@ -1,0 +1,93 @@
+:root {
+  --theme-clr: rgb(50, 150, 255);
+}
+body {
+  background-color: 1c1c1c;
+}
+
+h1 {
+  color: ffffff;
+  font-size: 55px;
+  font-family: 'Overpass', sans-serif;
+}
+
+h1:hover {
+  color: #e8909c;
+  transition-duration: 0.5s;
+  text-shadow: 0px 0px 5px var(--theme-clr)
+}
+
+h2 {
+  color: ffffff;
+  font-size: 35px;
+  font-family: 'Overpass', sans-serif;
+}
+
+h3 {
+  color: ffffff;
+  font-size: 25px;
+  font-family: 'Overpass', sans-serif;
+}
+.orRowcamel{
+    height: 1px;
+    flex-grow: 1;
+    background-color: #999;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background: linear-gradient(45deg, #d96877, #e8909c);
+}
+
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(56px);
+  -ms-transform: translateX(56px);
+  transform: translateX(56px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
