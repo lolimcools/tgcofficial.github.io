@@ -1,226 +1,73 @@
+<!DOCTYPE html>
 <html>
 <head>
-<style>
-:root {
-  --theme-clr: rgb(50, 150, 255);
-}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Game Collection | More Stuff | About:Blank Embedder</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/navbarmonthcolor.css"/>
+  <link rel="icon" type="image/png" href="Icon.png" />
+  <script src="https://kit.fontawesome.com/e98d5a582c.js" crossorigin="anonymous"></script>
+</head>	
+<body>
+   <!-- Navigation Bar -->
+  <nav class="bar" id="nav">
+    <!-- Site Header -->
+    <h2>The Game Collection</h2>
+    <!-- Navigation Bar Toggle -->
+    <a class="updown" id="updown" onclick="b=!b; xd()"><i id='ud' class="fa-solid fa-caret-up"></i></a>
+    <a href="credits.index.html" data-tippy-content="Credits"><i class="fa-solid fa-user"></i></a>
+        <a href="settings.index.html" data-tippy-content="Settings"><i class="fa fa-fw fa-gear"></i></a>
+    <a class="active"><i class="fa-solid fa-layer-group"></i></a>
+    <a href="games.index.html" data-tippy-content="Games"><i class="fa fa-fw fa-gamepad"></i></a>
+        <a href="events.index.html" data-tippy-content="Events"><i class="fa-solid fa-fire"></i></a>
+
+    </div>
+                <a href="index.html" data-tippy-content="Home"><i class="fa fa-fw fa-home"></i></a>
+
+  </nav>
+  <!-- Main Loader CSS -->
+
+  <!-- Loader -->
+
+  <!-- Main Loader CSS -->
+<a href="#" data-custom onclick=""></a>
+<link rel="stylesheet" href="css/mainmonthcolor.css" />
+  <div class="loader">
+    <div class="loader-logo">
+
+<!-- Month Logo -->
+
+<iframe src="loader/image.index.html" frameBorder="0"></iframe>
+<!-- End of Month logo -->
+</div>
+    <div class="loader-bar"></div>
+  </div>
+  <div class="loaded-overlay"></div>
+
+  <!-- JS for loader-->
+<script src="js/loader.js"></script>
+  <!-- End Of Loader -->
+
+  <!-- Page Contents -->
+
+  <style>
 body {
-  color: white;
   background-color: 1c1c1c;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-.credit {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-
-}
-input {
-  background: rgba(0, 0, 0, 0);
+.gameframe {
+  width: 100%;
+  height: 180vh;
   border: none;
-  outline: none;
-  width: 100%;
-  border-bottom: 1px solid #FFF;
-  font-family: "Montserrat", sans-serif;
-  font-size: inherit;
-  color: white;
-}
-
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  font-style: italic;
-  color: white;
-  opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: white;
-}
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: white;
-}
-
-.console-container {
-  margin: auto;
-  font-family: "Montserrat", sans-serif;
-  height: 40vh;
-  margin-bottom: 10vh;
-}
-
-.console {
-  width: 100%;
-  box-sizing: border-box;
-  margin: auto;
-  overflow: hidden;
-  font-family: "Montserrat", sans-serif;
-}
-
-.console-input {
-  padding-bottom: 15%;
-  font-family: "Montserrat", sans-serif;
-}
-
-.console h1 {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  color: #fff;
-}
-
-.console .consolebody {
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  padding: 20px;
-  background-color: #171717;
-  color: #FFFFF;
-  border-radius: 25px;
-}
-
-.consolebody {
-  font-family: "Montserrat", sans-serif;
-}
-
-.console .consolebody p {
-  line-height: 1.5rem;
-}
-
-.button-wrapper {
-  padding-top: 2%;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-}
-
-.console-button {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 0.6em 2em;
-  margin-right: 2em;
-  border: none;
-  outline: none;
-  color: rgb(0, 0, 0);
-  background: white;
-  cursor: pointer;
-  position: relative;
-  border-radius: 25px;
-  font-size: 20px;
-}
-
-.console-button:before {
-  content: "";
-  background: linear-gradient(45deg, #ffffff, #c2c2c2, #ffffff, #c2c2c2, #ffffff, #c2c2c2, #ffffff, #c2c2c2, #ffffff);
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowingbn5 20s linear infinite;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 25px;
-  font-family: "Montserrat", sans-serif;
-}
-
-@keyframes glowingbn5 {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.console-button:active {
-  color: white;
-}
-
-.console-button:active:after {
-  background: transparent;
-}
-
-.console-button:hover:before {
-  opacity: 1;
-}
-
-.console-button:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: black;
-  left: 0;
-  top: 0;
-  border-radius: 25px;
-}
-
-h1 {
-  color: ffffff;
-  font-size: 55px;
-  font-family: 'Overpass', sans-serif;
-  text-align: center;
-}
-
-h1:hover {
-  color: #e8909c;
-  transition-duration: 0.5s;
-  text-shadow: 0px 0px 5px var(--theme-clr)
 }
 </style>
-</head>
-<h1>About:Blank Embedder</h1>
 
-<body>
-  <body>
-    <div class="console-container">
-      <div class="console">
-        <div class="consolebody">
-        <center>
-          <p>Enter a URL you want to be opened in a About:Blank page below</p>
-        <center>
-          <p class="console-input"><input id="url-target" value="" autocomplete="on" type="text" autofocus /></p>
-        </div>
-      </div>
-      <div class="button-wrapper">
-        <button id="create" class="console-button">Create page</button>
-        <button class="console-button" onclick="document.getElementById('url-target').value = ''">Clear</button>
-      </div>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756835229788588" crossorigin="anonymous"></script>
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5756835229788588" data-ad-slot="6230603875" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<iframe class="gameframe" src="iframe/morestuffframe.index.html"></iframe>
 
-    </div>
-    <script>
-      var url = document.getElementById("url-target");
-      var urlObj = new window.URL(window.location.href);
-      document.getElementById("create").onclick = function () {
-        if (url.value.substring(0, 8) !== 'https://' && url.value.substring(0, 7) !== 'http://') {
-    		url.value = 'https://' + url.value.split('https://').pop();
-        } else if (url.value.substring(0, 7) == 'http://'){
-        	url.value = 'https://' + url.value.split('http://').pop();
-        };
-        win = window.open();
-        win.document.body.style.margin = "0";
-        win.document.body.style.height = "100vh";
-        var iframe = win.document.createElement("iframe");
-        iframe.style.border = "none";
-        iframe.style.width = "100%";
-        iframe.style.height = "100%";
-        iframe.style.margin = "0";
-        iframe.referrerpolicy = "no-referrer";
-        iframe.allow = "fullscreen";
-        iframe.src = url.value;
-        win.document.body.appendChild(iframe);
-        var script = win.document.createElement("script");
-        win.document.body.appendChild(script);
-      };
-    </script>
-  </body>
-</html>
+
+
+  <!-- Anti-Embed -->
+ <script src="enbed/blocker.js"></script>
+</body>
+</html> 
