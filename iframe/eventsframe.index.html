@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root {
+  --theme-clr: rgb(50, 150, 255);
+}
+body {
+background-color: #1c1c1c;
+}
+
+h1 {
+  font-family: 'Overpass', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: 'Overpass', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+h3 {
+  font-family: 'Overpass', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 30px;
+}
+
+a:link {
+  color: #e8909c;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #d96877;
+  background-color: transparent;
+}
+
+.gameicon {
+	height: 300px;
+	width: 300px;
+	margin-left: 400px;
+    border-radius:8px;
+    box-shadow:0 6px 12px 0 rgba(0,0,0,.24);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+  font-family: 'Overpass', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+
+<h1>Roblox</h1>
+
+
+<img src="https://play-lh.googleusercontent.com/WNWZaxi9RdJKe2GQM3vqXIAkk69mnIl4Cc8EyZcir2SKlVOxeUv9tZGfNTmNaLC717Ht" alt="GameIcon" class="gameicon"></a>
+
+<h2>Game will upload in</h2>
+
+<p id="demo"></p>
+
+<h3>You can find the game <a href="/">here</a>
+</h3>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 14, 2023 11:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + " Days " + hours + " Hours "
+  + minutes + " Min " + seconds + " Sec ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Game Uploaded!";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
