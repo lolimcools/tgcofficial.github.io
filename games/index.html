@@ -61,7 +61,60 @@ body {
   border: none;
 }
 </style>
+<html>
+<head>
+<script type="text/javascript">
+<!--
+// Create an array of the links to choose from:
+var links = new Array();
+links[0] = "/games/retro-bowl";
+links[1] = "/subway-surfers-games/subway-surfers-new-york";
+links[2] = "/games/venge-io";
+links[3] = "/games/vex-7";
+links[4] = "/games/monkey-mart";
+links[5] = "/games/stickman-hook";
+links[6] = "/games/drive-mad";
+links[7] = "/games/smash-karts-io";
+links[8] = "/games/football-legends";
+links[9] = "/games/stickman-hook-halloween";
+links[10] = "/games/rooftop-snipers";
+links[11] = "/games/rooftop-snipers-2";
+function openLink() {
+  // Chooses a random link:
+  var i = Math.floor(Math.random() * links.length);
+  // Directs the browser to the chosen target:
+  parent.location = links[i];
+  return false;
+}
+//-->
+</script>
+<style>
+.btn {
+	background-color: #171717;
+	color: #FFFFFF;
+	border: 0;
+	width: 20em;
+	padding: 0.5em 2.5em;
+	border-radius: 2em;
+	cursor: pointer;
+	transition: .5s;
+    font-family: 'Overpass', sans-serif;
+}
 
+.btn:hover {
+  animation-duration: 0.5s;
+  background: linear-gradient(45deg, #d96877, #e8909c);
+  transform:scale(1.12)
+}
+</style>
+</head>
+<body>
+</body>
+<center>
+<a rel="noreferrer noopener"  onclick="openLink();"><button type="button" class="btn text">Click Here For A Random Game</button></a>
+
+</center>
+</html>
 <iframe class="gameframe" src="/gamespage.index.html"></iframe>
 
   <!-- Anti-Embed -->
