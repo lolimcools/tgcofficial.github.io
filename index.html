@@ -56,15 +56,10 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4536794942189475"
      crossorigin="anonymous"></script>
 <!-- Install Code -->
-<script>
-	window.addEventListener("beforeinstallprompt", (e) => {
-  // log the platforms provided as options in an install prompt
-  console.log(e.platforms); // e.g., ["web", "android", "windows"]
-  e.userChoice.then((choiceResult) => {
-    console.log(choiceResult.outcome); // either "accepted" or "dismissed"
-  }, handleError);
-});
-</script>
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"
+></script>
 
   <!-- Anti-Embed -->
  <script src="enbed/blocker.js"></script>
