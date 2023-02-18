@@ -10,7 +10,7 @@ html{
 #gameframe .gameDisplay{
     margin:auto;
     width:75vw;
-    height:90vh;
+    height:87vh;
     background-color:#171717;
     border-radius:5px;
     overflow:hidden
@@ -19,7 +19,7 @@ html{
 #gameframe .game{
     margin:auto;
     width:100%;
-    height:80vh;
+    height:77vh;
     background-color:#171717;
     background-repeat:no-repeat;
     background-position:center;
