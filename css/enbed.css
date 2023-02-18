@@ -12,9 +12,9 @@ Copyright 2022, All Rights Reserved
   --background-secondary-color: #292929;
   --foreground-primary-color: #b8b8b8;
   --foreground-secondary-color: white;
-  --foreground-tertiary-color: #d96877;
-  --accent-primary-color: #d96877;
-  --accent-secondary-color: #e8909c;
+  --foreground-tertiary-color: #249022;
+  --accent-primary-color: #249022;
+  --accent-secondary-color: #185e17;
 }
 
 html {
