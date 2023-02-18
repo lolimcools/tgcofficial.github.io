@@ -10,33 +10,33 @@ body {
 
 @keyframes breathing {
   0% {
-    box-shadow: 0 5px 170px #d96877;
+    box-shadow: 0 5px 170px #249022;
   }
 
   25% {
-    box-shadow: 0 5px 200px #e8909c;
+    box-shadow: 0 5px 200px #185e17;
   }
 
   60% {
-    box-shadow: 0 5px 170px #d96877;
+    box-shadow: 0 5px 170px #249022;
   }
 
   100% {
-    box-shadow: 0 5px 170px #e8909c;
+    box-shadow: 0 5px 170px #185e17;
   }
 }
 
 @-webkit-keyframes breathing {
   0% {
-    box-shadow: 0 5px 170px #d96877;
+    box-shadow: 0 5px 170px #249022;
   }
 
   25% {
-    box-shadow: 0 5px 200px #d96877;
+    box-shadow: 0 5px 200px #185e17;
   }
 
   60% {
-    box-shadow: 0 5px 170px #e8909c;
+    box-shadow: 0 5px 170px #249022;
   }
 
   100% {
@@ -85,12 +85,12 @@ body {
 
 .navitem:hover {
   transform: scaleX(1.2) scaleY(1.2);
-  background: linear-gradient(45deg, #d96877, #e8909c);
+  background: linear-gradient(45deg, #249022, #185e17);
 
 }
 
 .navitem[current] {
-  background: linear-gradient(45deg, #d96877, #e8909c);
+  background: linear-gradient(45deg, #249022, #185e17);
   color: #FFFFFF;
 }
 
@@ -412,7 +412,7 @@ h1.loader-logo-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(45deg, #d96877, #e8909c);
+  background: linear-gradient(45deg, #249022, #185e17);
   font-size: 1.3rem;
   border-radius: 15px;
   cursor: pointer;
