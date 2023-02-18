@@ -8,42 +8,6 @@ body {
   font-family: arista, arial, sans-serif, monospace;
 }
 
-@keyframes breathing {
-  0% {
-    box-shadow: 0 5px 170px #d96877;
-  }
-
-  25% {
-    box-shadow: 0 5px 200px #e8909c;
-  }
-
-  60% {
-    box-shadow: 0 5px 170px #d96877;
-  }
-
-  100% {
-    box-shadow: 0 5px 170px #e8909c;
-  }
-}
-
-@-webkit-keyframes breathing {
-  0% {
-    box-shadow: 0 5px 170px #d96877;
-  }
-
-  25% {
-    box-shadow: 0 5px 200px #d96877;
-  }
-
-  60% {
-    box-shadow: 0 5px 170px #e8909c;
-  }
-
-  100% {
-    box-shadow: 0 5px 170px #d96877;
-  }
-}
-
 .navbar {
   height: 56px;
   position: sticky;
@@ -56,7 +20,7 @@ body {
   justify-content: center;
   height: 100%;
   align-items: center;
-  gap: 13.5px;
+  gap: 12px;
   background: #171717;
 }
 
@@ -83,12 +47,12 @@ body {
 
 .navitem:hover {
   transform: scaleX(1.2) scaleY(1.2);
-  background: linear-gradient(45deg, #d96877, #e8909c);
+  background: linear-gradient(45deg, #249022, #185e17);
 
 }
 
 .navitem[current] {
-  background: linear-gradient(45deg, #d96877, #e8909c);
+  background: linear-gradient(45deg, #249022, #185e17);
   color: #FFFFFF;
 }
 
@@ -410,7 +374,7 @@ h1.loader-logo-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(45deg, #d96877, #e8909c);
+  background: linear-gradient(45deg, #249022, #185e17);
   font-size: 1.3rem;
   border-radius: 15px;
   cursor: pointer;
