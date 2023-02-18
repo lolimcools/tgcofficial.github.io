@@ -5,7 +5,445 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Game Collection | Home</title>
   <link rel="icon" type="image/png" href="Icon.png" />
-  <link rel="stylesheet" href="/css/maingame.css" />
+  <style>
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #1c1c1c;
+  font-family: arista, arial, sans-serif, monospace;
+}
+
+@keyframes breathing {
+  0% {
+    box-shadow: 0 5px 170px #d96877;
+  }
+
+  25% {
+    box-shadow: 0 5px 200px #e8909c;
+  }
+
+  60% {
+    box-shadow: 0 5px 170px #d96877;
+  }
+
+  100% {
+    box-shadow: 0 5px 170px #e8909c;
+  }
+}
+
+@-webkit-keyframes breathing {
+  0% {
+    box-shadow: 0 5px 170px #d96877;
+  }
+
+  25% {
+    box-shadow: 0 5px 200px #d96877;
+  }
+
+  60% {
+    box-shadow: 0 5px 170px #e8909c;
+  }
+
+  100% {
+    box-shadow: 0 5px 170px #d96877;
+  }
+}
+
+.navbar {
+  height: 56px;
+  box-shadow: 0 5px 200px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  animation: breathing 4.5s ease-out infinite normal;
+}
+
+.navitems {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  gap: 12px;
+  background: #171717;
+}
+
+.navlogo {
+  height: 50px;
+  border-radius: 15px;
+  position: absolute;
+  left: 0px;
+  top: 3px;
+  user-select: none;
+  transition: transform 0.5s;
+}
+
+.navitem {
+  border-radius: 15px;
+  padding: 10px 8px;
+  font-size: 15px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  color: #FFFFFF;
+  transition: transform 0.5s;
+}
+
+.navitem:hover {
+  transform: scaleX(1.2) scaleY(1.2);
+  background: linear-gradient(45deg, #d96877, #e8909c);
+
+}
+
+.navitem[current] {
+  background: linear-gradient(45deg, #d96877, #e8909c);
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #171717;
+}
+
+div.loaded-overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+div.loaded-overlay::before {
+  content: '';
+  background-color: rgba(25, 25, 25, 0.25);
+  backdrop-filter: blur(2px);
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left:0;
+  top:0;
+  bottom:0;
+  animation: flowinleft 1.25s 0.2s forwards;
+}
+
+div.loaded-overlay::after {
+  content: '';
+  background-color: rgba(25, 25, 25, 0.25);
+  backdrop-filter: blur(2px);
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right:0;
+  top:0;
+  bottom:0;
+  animation: flowinright 1.25s 0.2s forwards;
+}
+
+
+/* Loader */
+
+div.loader {
+ background-color: #1c1c1c;
+ z-index: 2;
+ position:fixed;
+ top: 0;
+ overflow:hidden;
+ width: 100%;
+ height: 100%;
+}
+
+div.loader-logo {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width: 100%;
+  height: calc(100% - 10px);
+}
+
+h1.loader-logo-title {
+ font-size: 55px;
+ background-image: linear-gradient(45deg, purple, blueviolet);
+ background-size: 100%;
+ background-repeat: repeat;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent; 
+ text-shadow: none;
+ filter: drop-shadow(0px 0px 6px #8515b1);
+}
+
+/* Animations */
+
+@keyframes loader-bar-animation {
+  from {
+    width:0;
+  }
+  5% {
+    width: 15%;
+  }
+  20% {
+    width: 25%;
+  }
+  35% {
+    width: 60%;
+  }
+  45% {
+    width: 65%;
+  }
+  65% {
+    width: 70%;
+  }
+  80% {
+    width: 75%;
+  }
+  90% {
+    width: 90%;
+  }
+  to {
+    width:100%;
+  }
+}
+
+@keyframes flowinleft {
+  from { transform-origin: center left; transform:scaleX(100%); }
+  to { transform-origin: center left; transform:scaleX(0); display: none; }
+}
+
+@keyframes flowinright {
+  from { transform-origin: center right; transform:scaleX(100%); }
+  to { transform-origin: center right; transform:scaleX(0); display: none; }
+}
+
+@keyframes swap-bottom {
+  0% { transform: translateX(0) translateY(-100%); }
+  100% { transform: none; }
+}
+
+@media only screen and (max-width:650px) {
+  nav.bar h2 { display:none; }
+  nav.bar #updown { display:none; }
+  nav.bar { display:flex; justify-content: center; gap: 5px; }
+}
+
+.tippy-box[data-theme~='darker'] {
+  background-color: #555;
+}
+
+.js-snackbar-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 100%;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.js-snackbar-container--top-left {
+    bottom: unset;
+    right: unset;
+    top: 0;
+    left: 0;
+}
+
+.js-snackbar-container--top-center {
+    top: 0;
+    bottom: unset;
+    left: 50%;
+    right: unset;
+    transform: translateX(-50%);
+}
+
+.js-snackbar-container--top-right {
+    bottom: unset;
+    right: 0;
+    left: unset;
+    top: 0;
+}
+
+.js-snackbar-container--bottom-left {
+    bottom: 0;
+    right: unset;
+    left: 0;
+    top: unset;
+}
+
+.js-snackbar-container--bottom-center {
+    bottom: 0;
+    right: unset;
+    left: 50%;
+    top: unset;
+    transform: translateX(-50%);
+}
+
+.js-snackbar-container--fixed {
+    position: fixed;
+}
+
+.js-snackbar-container * {
+    box-sizing: border-box;
+}
+
+.js-snackbar__wrapper {
+    overflow: hidden;
+    height: auto;
+    margin: 0;
+    border-radius: 3px;
+    display: flex;
+    min-width: auto;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+}
+
+.js-snackbar {
+    display: inline-flex;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #eee;
+    font-size: 16px;
+    background-color: #262626;
+    vertical-align: bottom;
+    box-shadow: 0 0 4px 0 black;
+    margin: 0 10px;
+    flex-grow: 1;
+}
+
+.js-snackbar__close,
+.js-snackbar__status,
+.js-snackbar__message-wrapper {
+    position: relative;
+}
+
+.js-snackbar__message-wrapper {
+    flex: 1;
+    padding: 12px;
+}
+
+.js-snackbar__message {
+    display: inline-block;
+}
+
+.js-snackbar__status {
+    display: none;
+    min-width: 15px;
+    margin-right: 5px;
+    border-radius: 3px 0 0 3px;
+    background-color: transparent;
+}
+
+ .js-snackbar__status.js-snackbar--success,
+ .js-snackbar__status.js-snackbar--warning,
+ .js-snackbar__status.js-snackbar--danger,
+ .js-snackbar__status.js-snackbar--info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.js-snackbar__status.js-snackbar--success  {
+    background-color: #4caf50;
+}
+
+.js-snackbar__status.js-snackbar--warning  {
+    background-color: #ff9800;
+}
+
+ .js-snackbar__status.js-snackbar--danger {
+    background-color: #b90909;
+}
+
+ .js-snackbar__status.js-snackbar--info {
+    background-color: #2196f3;
+}
+
+.js-snackbar__icon {
+    display: block;
+    border: 2px solid white;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin: 5px 5px;
+    font-family: monospace;
+}
+
+.js-snackbar__action {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    color: #838cff;
+    cursor: pointer;
+}
+
+.js-snackbar__action:hover {
+    background-color: #333;
+}
+
+.js-snackbar__close {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    user-select: none;
+    color: #BBB;
+}
+
+.js-snackbar__close:hover {
+    background-color: #444;
+}
+
+
+.play-link {
+  width: fit-content;
+  display: block;
+}
+
+.play {
+  height: 30px;
+  padding: 22px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #d96877, #e8909c);
+  font-size: 1.3rem;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 10rem;
+  user-select: none;
+  border: none;
+  color: #FFFFFF;  
+  transition: transform 0.5s;
+  margin-top: 30px;
+}
+
+.play:hover {
+  transform: scaleX(1.4) scaleY(1.4) rotate(8deg);
+}
+
+
+.logo {
+  margin-top: 140px;
+  height: 250px;
+  width: 250px;
+}
+
+</style>
 </head>
   <body>
     <div class="navbar">
@@ -71,7 +509,7 @@
  </center>
   </center>
 <div class="threearrow">
-<div style="background-position: center;width:100%;    text-align: center; height:1080px; position:relative;z-index:5; z-index:1; background-image:url(https://github.com/hilfig3r/images/blob/main/betterwavetgc.png?raw=true);">
+                        <div style="background-position: center;width:100%;    text-align: center; height:1080px; position:relative;z-index:5; z-index:1; background-image:url(https://github.com/hilfig3r/images/blob/main/betterwavetgc.png?raw=true);">
 </body>
 </html>
 </body>
