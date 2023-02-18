@@ -51,7 +51,7 @@
 }
 
 input:checked + .slider {
-  background: linear-gradient(45deg, #249022, #cda81d);
+  background: linear-gradient(45deg, #249022, #185e17);
 }
 
 input:checked + .slider:before {
