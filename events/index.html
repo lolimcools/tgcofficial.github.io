@@ -4,27 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Game Collection | Events</title>
-  <link rel="stylesheet" href="/css/main.css" />
-  <link rel="stylesheet" href="/css/navbarmonthcolor.css"/>
-  <link rel="icon" type="image/png" href="/Icon.png" />
-  <script src="https://kit.fontawesome.com/e98d5a582c.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="Icon.png" />
+  <link rel="stylesheet" href="/css/mainpage.css" />
 </head>
-<body>
-   <!-- Navigation Bar -->
-  <nav class="bar" id="nav">
-    <!-- Site Header -->
-    <h2>The Game Collection</h2>
-    <!-- Navigation Bar Toggle -->
-    <a class="updown" id="updown" onclick="b=!b; xd()"><i id='ud' class="fa-solid fa-caret-up"></i></a>
-    <a href="/credits" data-tippy-content="Credits"><i class="fa-solid fa-user"></i></a>
-        <a href="/settings" data-tippy-content="Settings"><i class="fa fa-fw fa-gear"></i></a>
-                <a href="/morestuff" data-tippy-content="More Stuff"><i class="fa-solid fa-layer-group"></i></a>
-    <a href="/games" data-tippy-content="Games"><i class="fa fa-fw fa-gamepad"></i></a>
-        <a class="active"><i class="fa-solid fa-fire"></i></a>
+  <body>
+    <div class="navbar">
+      <div class="navitems">
+        <iframe src="/iframe/navbarlogo.index.html" frameBorder="0" class="navlogo"></iframe>
+        <a href="/"><div class="navitem">Home</div></a>
+        <a href="/games"><div class="navitem">Games</div></a>
+        <a href="/events"><div class="navitem" current>Events</div></a>
+        <a href="/leaderboards"><div class="navitem">Leaderboards</div></a>
+        <a href="/extra"><div class="navitem">Extra</div></a>
+        <a href="/settings"><div class="navitem">Settings</div></a>
+        <a href="/credits"><div class="navitem">Credits</div></a>
+      </div>
     </div>
-                <a href="/" data-tippy-content="Home"><i class="fa fa-fw fa-home"></i></a>
-
-  </nav>
   <!-- Main Loader CSS -->
          
   <!-- Loader -->
@@ -50,7 +45,7 @@
 
   <!-- Page Contents -->
   
-  <style>
+<style>
 body {
   background-color: 1c1c1c;
 }
