@@ -66,7 +66,16 @@ say[58] = "v.5 is out!";
 say[59] = "If you microwave your phone it will become faster!";
 say[60] = "Welcome to my rad website";
 say[61] = "coems 🤑";
-say[62] = "there are 62 of these messages!";
+say[62] = "Ok, and I know your address now!"
+
+
+
+
+
+
+
+
+say[63] = "there are 63 of these messages!";
 
 
 var howmany = say.length;
