@@ -69,6 +69,7 @@ say[61] = "coems 🤑";
 say[62] = "Ok, and I know your address now!";
 say[63] = "pop";
 say[64] = "MERICAA RAHHH!!!!🦅🦅🦅";
+say[65] = "open the noor";
 
 
 
@@ -77,7 +78,7 @@ say[64] = "MERICAA RAHHH!!!!🦅🦅🦅";
 
 
 
-say[65] = "there are 65 of these messages!";
+say[66] = "there are 66 of these messages!";
 
 
 var howmany = say.length;
