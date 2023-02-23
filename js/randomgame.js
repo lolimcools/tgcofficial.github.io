@@ -3,7 +3,7 @@
 var links = new Array();
 links[0] = "/games/retro-bowl";
 links[1] = "/subway-surfers-games/subway-surfers-new-york";
-links[2] = "/games/venge-io";
+links[2] = "/games/vex-7";
 links[3] = "/games/vex-7";
 links[4] = "/games/monkey-mart";
 links[5] = "/games/stickman-hook";
