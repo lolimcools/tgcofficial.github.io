@@ -209,6 +209,12 @@ links[206] = "/games/duck-hunt";
 links[207] = "/games/t-rex-game";
 links[208] = "/games/five-nights-at-winstons";
 links[209] = "/games/merge-round-racers/";
+links[210] = "/games/boxing-random/";
+links[211] = "/games/recoil/";
+links[212] = "/games/stick-duel-battle/";
+links[213] = "/games/bouncy-basketball/";
+links[214] = "/subway-surfers-games/subway-surfers-winter-holiday/";
+links[215] = "/games/gold-digger-frvr/";
 
 	
 function openLink() {
