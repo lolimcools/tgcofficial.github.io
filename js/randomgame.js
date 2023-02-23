@@ -215,6 +215,10 @@ links[212] = "/games/stick-duel-battle/";
 links[213] = "/games/bouncy-basketball/";
 links[214] = "/subway-surfers-games/subway-surfers-winter-holiday/";
 links[215] = "/games/gold-digger-frvr/";
+links[216] = "/games/getting-over-it/";
+links[217] = "/games/murder/";
+links[218] = "/games/monster-tracks/";
+links[219] = "/games/president-simulator/";
 
 	
 function openLink() {
