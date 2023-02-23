@@ -208,6 +208,8 @@ links[205] = "/games/rubiks-cube";
 links[206] = "/games/duck-hunt";
 links[207] = "/games/t-rex-game";
 links[208] = "/games/five-nights-at-winstons";
+links[209] = "/games/merge-round-racers/";
+
 	
 function openLink() {
   var i = Math.floor(Math.random() * links.length);
