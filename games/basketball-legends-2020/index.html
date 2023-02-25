@@ -80,40 +80,25 @@
 
 </div>
 <div class="right">
-<!-- DONT MESS! -->
-<button1 type="fullscreen"> <img src="https://raw.githubusercontent.com/hilfig3r/images/main/fullscreen.webp" class="fullscreenbtn" border="0" />
-<!-- DONT MESS! -->
+	
+<!-- Fullscreen Button -->
 
-      </button1> <script> var urlObj = new window.URL(window.location.href);
-      
- var url = "https://glitchyeet.github.io/TGC-Storage/G-Storage/basketball-legends2020.index.html";
- 
- if (url) {
-     var win;
-     document.querySelector('button1').onclick = function() {
-         if (win) {
-             win.focus();
-        }
-         else {
-             win = window.open();
-             win.document.body.style.margin = '0';
-             win.document.body.style.height = '100vh';
-             var iframe = win.document.createElement('iframe');
-             iframe.style.border = 'none';
-             iframe.style.width = '100%';
-             iframe.style.height = '100%';
-             iframe.style.margin = '0';
-             iframe.src = url;
-             win.document.body.appendChild(iframe);
-        }
-    }
-    ;
+<button1 onclick="openFullscreen();" type="fullscreen"> <img src="/images/fullscreen.png" class="fullscreenbtn" border="0" />
+
+<script>
+var elem = document.getElementById("iframe");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) {
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) {
+    elem.msRequestFullscreen();
+  }
 }
- </script>
+</script>
 
- <!-- Fullscreen CSS -->
-
- <style> 
+<style> 
 .fullscreenbtn {
   border-radius:5px;
   height: 25px;
@@ -125,12 +110,13 @@
   box-shadow:0 6px 12px 0 rgba(0,0,0,.24);
 }
 .fullscreenbtn:hover {
-  width: 25px;
-  transform: rotate(-10deg);
+  transform: scaleX(1.2) scaleY(1.2) rotate(-10deg);
 
 }
-</style> 
-<!-- Like/Dislike JS -->
+</style>
+
+<!-- End Fullscreen Button -->
+	
 <script>
 var btn1 = document.querySelector('#green');
 var btn2 = document.querySelector('#red');
