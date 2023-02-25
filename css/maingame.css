@@ -2,7 +2,7 @@ html{
     overflow-x:hidden
 }
 #gameframe{
-    margin-top:25px;
+    margin-top:18px;
     margin-bottom:120px;
     width:100vw;
     display:flex
