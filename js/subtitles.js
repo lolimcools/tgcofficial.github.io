@@ -72,6 +72,10 @@ say[64] = "MERICAA RAHHH!!!!🦅🦅🦅";
 say[65] = "open the noor";
 say[66] = "SIUUUUUUUUUUUUUUUUUUUUU";
 say[67] = "cap 🧢";
+say[68] = "peanut";
+say[69] = "this message is number 69";
+say[70] = "90% bug free!";
+say[71] = "🐧";
 
 
 
@@ -79,8 +83,7 @@ say[67] = "cap 🧢";
 
 
 
-
-say[68] = "there are 68 of these messages!";
+say[72] = "there are 71 of these messages!";
 
 
 var howmany = say.length;
