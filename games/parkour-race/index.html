@@ -147,21 +147,36 @@ btn2.addEventListener('click', function() {
 </div>
 <!-- anti-close toggle -->
 <div class="adsrc" style="text-align:center;">
-<!-- Main Anti-Close CSS -->
+<!-- Main Anti-Close CSS --><label onclick="anticlose()" class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</script>
+
+<script>
+function anticlose() {
+window.onbeforeunload = confirmExit;
+function confirmExit() {
+return "Anti-Close";
+}}
+</script>
+
 <link rel="stylesheet" href="/css/anticlose.css" />
 <div id="anticlose">
 <h1>Anti-Close</h1>
 
-<label class="switch">
+<label onclick="anticlose()" class="switch">
   <input type="checkbox">
   <span class="slider round"></span>
-  <!-- script -->
-      <script language="JavaScript">
-    window.onbeforeunload = confirmExit;
-    function confirmExit() {
-        return "TGC Anti-Close";
-    }
 </script>
+
+<script>
+function anticlose() {
+window.onbeforeunload = confirmExit;
+function confirmExit() {
+return "Anti-Close";
+}}
+</script>
+
 </label>
 </body>
 </html> 
