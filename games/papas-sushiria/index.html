@@ -64,7 +64,7 @@
 
 <div class="game">
 
-<iframe id="iframe" src="https://tgcofficial.github.io/game-preloaders/papasushi.index.html"></iframe>
+<iframe id="iframe" src="/game-preloaders/papasushi.index.html"></iframe>
 </div>
 <div class="options">
 
@@ -152,16 +152,19 @@ btn2.addEventListener('click', function() {
 <div id="anticlose">
 <h1>Anti-Close</h1>
 
-<label class="switch">
+<label onclick="anticlose()" class="switch">
   <input type="checkbox">
   <span class="slider round"></span>
-  <!-- script -->
-      <script language="JavaScript">
-    window.onbeforeunload = confirmExit;
-    function confirmExit() {
-        return "TGC Anti-Close";
-    }
 </script>
+
+<script>
+function anticlose() {
+window.onbeforeunload = confirmExit;
+function confirmExit() {
+return "Anti-Close";
+}}
+</script>
+
 </label>
 </body>
 </html> 
