@@ -49,3 +49,24 @@
 .btn2:hover {
   transform: scaleX(1.2) scaleY(1.2);
 }
+
+#back2game {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  background: linear-gradient(45deg, #249022, #185e17);
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.5s;
+  border: none;
+  height: 35px;
+  width: 140px;
+}
+
+#back2game:hover {
+  transform: scaleX(1.2) scaleY(1.2);
+}
