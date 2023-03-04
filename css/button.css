@@ -1,0 +1,51 @@
+.fullscreenbtn {
+  border-radius:5px;
+  height: 25px;
+  width: 25px;
+  margin-right: 15px;
+  margin-top: 42px;
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+}
+.fullscreenbtn:hover {
+  transform: scaleX(1.2) scaleY(1.2) rotate(-10deg);
+
+}
+
+.reloadbtn {
+  height: 25px;
+  width: 25px;
+  margin-right: 25px;
+  margin-top: 42px;
+  cursor: pointer;
+  transition: transform .55s ease-in-out;
+}
+.reloadbtn:hover {
+  transform: scaleX(1.2) scaleY(1.2) rotate(360deg);
+
+}
+.btn1 {
+  height: 25px;
+  width: 25px;
+  margin-right: 15px;
+  margin-top: 42px;
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+}
+
+.btn1:hover {
+  transform: scaleX(1.2) scaleY(1.2);
+}
+
+.btn2 {
+  height: 25px;
+  width: 25px;
+  margin-right: 25px;
+  margin-top: 42px;
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+}
+
+.btn2:hover {
+  transform: scaleX(1.2) scaleY(1.2);
+}
