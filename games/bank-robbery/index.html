@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="front-end web developer, unblocked, games, google sites, unblocked games mom, ublocked, code, coding, programmer, development, javascript, jquery, bootstrap, sass, less, git" />
+  <meta name="author" content="Saturn" />
+  <meta content="The Game Collection" property="og:title" />
+  <meta content="Best HTML game site!" property="og:description" />
+  <meta name="theme-color" content="#858385">
+  <meta property="og:image" content="/Icon.png">
+  <title>The Game Collection | Bank Robbery</title>
+  <link rel="icon" type="image/png" href="/Icon.png" />
+  <link rel="stylesheet" href="/css/tgcgamepage.css" />
+</head>
+  <body>
+    <div class="navbar">
+    <div class="navitems">
+    <iframe src="/iframe/navbarlogo.index.html" frameBorder="0" class="navlogo"></iframe>
+    <a href="/"><div class="navitem">Home</div></a>
+    <a href="/games"><div class="navitem" current>Games</div></a>
+    <a href="/events"><div class="navitem">Events</div></a>
+    <a href="/leaderboards"><div class="navitem">Leaderboards</div></a>
+    <a href="/extra"><div class="navitem">Extra</div></a>
+    <a href="/settings"><div class="navitem">Settings</div></a>
+    <a href="/credits"><div class="navitem">Credits</div></a>
+    </div>
+    </div>
+	  
+  <!-- Main Loader CSS -->
+         
+  <!-- Loader -->
+  
+  <!-- Main Loader CSS -->
+<a href="#" data-custom onclick=""></a>
+<link rel="stylesheet" href="/css/mainmonthcolor.css" />
+  <div class="loader">
+    <div class="loader-logo">
+    
+<!-- Month Logo -->
+	    
+<iframe src="/loader/image.index.html" frameBorder="0"></iframe>
+<!-- End of Month logo -->
+</div>
+    <div class="loader-bar"></div>
+  </div>
+  <div class="loaded-overlay"></div>
+  
+  <!-- JS for loader-->
+<script src="/js/loader.js"></script>
+  <!-- End Of Loader -->
+
+  <!-- Page Contents -->
+  <link rel="stylesheet" href="/css/maingame.css" /> 
+</a>
+</div>
+</div>
+<div id="gameframe">
+<div class="ad">
+<div class="adsrc">
+</div>
+</div>
+<div class="gameDisplay">
+
+<div class="game">
+
+<iframe id="iframe" src="https://tgcofficial.github.io/game-preloaders/bank-robbery.index.html"></iframe>
+</div>
+<div class="options">
+
+<div class="left">
+<img src="https://github.com/tgcofficial/tgcofficial.github.io/blob/main/images/bankrob.png?raw=true" alt="GameIcon" class="gameicon"></a>
+<h1 class="Title">Bank Robbery</h1>
+<script src="https://use.fontawesome.com/fe459689b4.js"></script>
+</div>
+<div class="right">
+  <link rel="stylesheet" href="/css/button.css"/>
+  <!-- Like And Dislike Buttons -->
+  
+  <button class="btn1" id="green"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i></button>
+  <button class="btn2" id="red"><i class="fa fa-thumbs-down fa-lg" aria-hidden="true"></i></button>
+  
+  <script>
+  var btn1 = document.querySelector('#green');
+  var btn2 = document.querySelector('#red');
+  btn1.addEventListener('click', function() {
+  
+      if (btn2.classList.contains('red')) {
+        btn2.classList.remove('red');
+      } 
+    this.classList.toggle('green');
+  
+  });
+  btn2.addEventListener('click', function() {
+  
+      if (btn1.classList.contains('green')) {
+        btn1.classList.remove('green');
+      } 
+    this.classList.toggle('red');
+  
+  });
+  </script>
+  
+  <!-- Reload Iframe Button -->
+  
+  <button1 id="reloadbtn"> <img src="/images/reload.png" class="reloadbtn" border="0" />
+    
+  <script>
+  function reload() {
+  document.getElementById('iframe').src += '';
+  }
+  reloadbtn.onclick = reload;
+  </script>
+  
+  <!-- Fullscreen Button -->
+  
+  <button1 onclick="openFullscreen();" type="fullscreen"> <img src="/images/fullscreen.png" class="fullscreenbtn" border="0" />
+  
+  <script>
+  var elem = document.getElementById("iframe");
+  function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) {
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+      elem.msRequestFullscreen();
+    }
+  }
+  </script>
+  
+  
+  
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- anti-close toggle -->
+  <div class="adsrc" style="text-align:center;">
+  <!-- Main Anti-Close CSS -->
+  <link rel="stylesheet" href="/css/anticlose.css" />
+  <div id="anticlose">
+  <h1>Anti-Close</h1>
+  
+  <label onclick="anticlose()" class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+  </script>
+  
+  <script>
+  function anticlose() {
+  window.onbeforeunload = confirmExit;
+  function confirmExit() {
+  return "Anti-Close";
+  }}
+  </script>
+  
+  
+  <!-- Scoll back to game button -->
+  
+  <button onclick="topFunction()" id="back2game">Back To Game</button>
+  
+  <script>
+  let mybutton = document.getElementById("back2game");
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+</label>
+</body>
+</html> 
+</div>
+</div>
+<!-- end of anti-close toggle -->
+<div class="adsrc" style="text-align:center;">
+<!-- recommended games -->
+<div id="moregames">
+<h1>Recommended Games</h1>
+<!--          1          -->
+        <a href="/flash-games/gun-mayhem-2" class="recogamebutton">
+          <img src="https://raw.githubusercontent.com/hilfig3r/images/main/GunMay2.png" width="110" height="110" decoding="async" class="recogamebutton">
+        </a>
+        
+        <!-- Second -->
+
+        <a href="/games/slime-rush-td" class="recogamebutton">
+          <img src="https://magenta-mermaid-c188a2.netlify.app/projects/slime-rush-td/splash.png" width="110" height="110" decoding="async" class="recogamebutton">
+        </a>
+        
+        <!-- Third -->
+
+<a href="/games/papas-cupcakeria" class="recogamebutton">
+          <img src="https://play-lh.googleusercontent.com/gte9Si0rKCJZOgvTwQkwAbv_6C8QOdY9qNubngx9KvldXLKOZOZpfTYFTAk38CyM3Uo" width="110" height="110" decoding="async" class="recogamebutton">
+        </a>
+        
+        <!-- Fourth -->
+        
+        <a href="/games/fnf-full-week" class="recogamebutton">
+          <img src="https://raw.githubusercontent.com/hilfig3r/images/main/fnf.png" width="110" height="110" decoding="async" class="recogamebutton">
+        </a>
+
+<!--          End          -->
+</div>
+</div>
+<!-- TGC Background -->
+<div class="threearrow">
+                        <div style="background-position: center;width:100%;    text-align: center; height:1080px; position:relative;z-index:5; z-index:5; background-image:url(https://github.com/hilfig3r/images/blob/main/betterwavetgc.png?raw=true);">
+
+<!-- Website Visits -->
+
+<h1 class="WebText">↓ Website Visits ↓</h1>
+     <div align='center'><a href='https://www.free-website-hit-counter.com'><img src='https://www.free-website-hit-counter.com/c.php?d=8&id=137831&s=8' border='0'</div>
+
+</div>
+</div>
+
+  <!-- Anti-Embed -->
+ <script src="/enbed/blocker.js"></script>
+</body>
+</html>
