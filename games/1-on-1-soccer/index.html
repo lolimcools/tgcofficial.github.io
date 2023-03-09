@@ -107,7 +107,7 @@
     
   <script>
   function reload() {
-  document.getElementById('gameiframe').src += '';
+  document.getElementById('iframe').src += '';
   }
   reloadbtn.onclick = reload;
   </script>
@@ -117,7 +117,7 @@
   <button1 onclick="openFullscreen();" type="fullscreen"> <img src="/images/fullscreen.png" class="fullscreenbtn" border="0" />
   
   <script>
-  var elem = document.getElementById("gameiframe");
+  var elem = document.getElementById("iframe");
   function openFullscreen() {
     if (elem.requestFullscreen) {
       elem.requestFullscreen();
