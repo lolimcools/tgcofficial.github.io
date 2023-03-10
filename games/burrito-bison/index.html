@@ -72,114 +72,62 @@
 <img src="https://play-lh.googleusercontent.com/vpTgm9u7-GzZP_MceTWpDi0HbinXd_4phCoTwf4ZspFL-115FtNRdo_SU1p-khLDnLA" alt="GameIcon" class="gameicon"></a>
 <h1 class="Title">Burrito Bison</h1>
 <script src="https://use.fontawesome.com/fe459689b4.js"></script>
-
-  <button class="btn" id="green"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i></button>
-  <button class="btn" id="red"><i class="fa fa-thumbs-down fa-lg" aria-hidden="true"></i></button>
-  
-  
-
 </div>
 <div class="right">
-<!-- DONT MESS! -->
-<button1 type="fullscreen"> <img src="https://raw.githubusercontent.com/hilfig3r/images/main/fullscreen.webp" class="fullscreenbtn" border="0" />
-<!-- DONT MESS! -->
-
-      </button1> <script> var urlObj = new window.URL(window.location.href);
-      
- var url = "https://tgcofficial.github.io/game-preloaders/b-bison.index.html";
- 
- if (url) {
-     var win;
-     document.querySelector('button1').onclick = function() {
-         if (win) {
-             win.focus();
-        }
-         else {
-             win = window.open();
-             win.document.body.style.margin = '0';
+<link rel="stylesheet" href="/css/button.css"/>
+  <!-- Like And Dislike Buttons -->
+  
+  <button class="btn1" id="green"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i></button>
+  <button class="btn2" id="red"><i class="fa fa-thumbs-down fa-lg" aria-hidden="true"></i></button>
+  
+  <script>
+  var btn1 = document.querySelector('#green');
+  var btn2 = document.querySelector('#red');
+  btn1.addEventListener('click', function() {
+  
+      if (btn2.classList.contains('red')) {
+        btn2.classList.remove('red');
+      } 
+    this.classList.toggle('green');
+  
+  });
+  btn2.addEventListener('click', function() {
+  
+      if (btn1.classList.contains('green')) {
+        btn1.classList.remove('green');
+      } 
+    this.classList.toggle('red');
+  
+  });
+  </script>
+  
+  <!-- Reload Iframe Button -->
+  
+  <button1 id="reloadbtn"> <img src="/images/reload.png" class="reloadbtn" border="0" />
     
-<!-- Fullscreen Button -->
-
-<button1 onclick="openFullscreen();" type="fullscreen"> <img src="/images/fullscreen.png" class="fullscreenbtn" border="0" />
-
-<script>
-var elem = document.getElementById("iframe");
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) {
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) {
-    elem.msRequestFullscreen();
+  <script>
+  function reload() {
+  document.getElementById('iframe').src += '';
   }
-}
-</script>
-
-<style> 
-.fullscreenbtn {
-  border-radius:5px;
-  height: 25px;
-  width: 25px;
-  margin-right: 15px;
-  margin-top: 42px;
-  cursor: pointer;
-  transition: transform .3s ease-in-out;
-  box-shadow:0 6px 12px 0 rgba(0,0,0,.24);
-}
-.fullscreenbtn:hover {
-  transform: scaleX(1.2) scaleY(1.2) rotate(-10deg);
-
-}
-</style>
-
-<!-- End Fullscreen Button -->
-
-<!-- Like/Dislike JS -->
-<script>
-var btn1 = document.querySelector('#green');
-var btn2 = document.querySelector('#red');
-btn1.addEventListener('click', function() {
-
-    if (btn2.classList.contains('red')) {
-      btn2.classList.remove('red');
-    } 
-  this.classList.toggle('green');
-
-});
-btn2.addEventListener('click', function() {
-
-    if (btn1.classList.contains('green')) {
-      btn1.classList.remove('green');
-    } 
-  this.classList.toggle('red');
-
-});
-</script>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- anti-close toggle -->
-<div class="adsrc" style="text-align:center;">
-<!-- Main Anti-Close CSS -->
-<link rel="stylesheet" href="/css/anticlose.css" />
-<div id="anticlose">
-<h1>Anti-Close</h1>
-
-<label onclick="anticlose()" class="switch">
-  <input type="checkbox">
-  <span class="slider round"></span>
-</script>
-
-<script>
-function anticlose() {
-window.onbeforeunload = confirmExit;
-function confirmExit() {
-return "Anti-Close";
-}}
-</script>
+  reloadbtn.onclick = reload;
+  </script>
+  
+  <!-- Fullscreen Button -->
+  
+  <button1 onclick="openFullscreen();" type="fullscreen"> <img src="/images/fullscreen.png" class="fullscreenbtn" border="0" />
+  
+  <script>
+  var elem = document.getElementById("iframe");
+  function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) {
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+      elem.msRequestFullscreen();
+    }
+  }
+  </script>
 
 </label>
 </body>
