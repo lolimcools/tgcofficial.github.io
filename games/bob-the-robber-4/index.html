@@ -128,11 +128,59 @@
     }
   }
   </script>
+  
+  
+  
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- anti-close toggle -->
+  <div class="adsrc" style="text-align:center;">
+  <!-- Main Anti-Close CSS -->
+  <link rel="stylesheet" href="/css/anticlose.css" />
+  <div id="anticlose">
+  <h1>Anti-Close</h1>
+  
+  <label onclick="anticlose()" class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+  </script>
+  
+  <script>
+  function anticlose() {
+  window.onbeforeunload = confirmExit;
+  function confirmExit() {
+  return "Anti-Close";
+  }}
+  </script>
+  
+  
+  <!-- Scoll back to game button -->
+  
+  <button onclick="topFunction()" id="back2game">Back To Game</button>
+  
+  <script>
+  let mybutton = document.getElementById("back2game");
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
 
-  </div>
-  </div>
-  </div>
-  </div>
+</label>
+</body>
+</html> 
+</div>
+</div>
 <!-- end of anti-close toggle -->
 <div class="adsrc" style="text-align:center;">
 <!-- recommended games -->
