@@ -1,0 +1,181 @@
+html,body,iframe,canvas,div {
+    margin:0;
+    padding:0;
+}
+
+ .gamebar {
+    overflow:hidden;
+    flex-grow:0;
+    flex-shrink:0;
+    display:flex;
+    justify-content:space-between;
+    align-self:stretch;
+    background:#171717;
+    position:relative;
+    z-index:3;
+    padding:0 16px 0 0;
+}
+
+
+ .gametext {
+    font-size:21px;
+    display:flex;
+    margin:12px;
+}
+
+
+ .tgcgame {
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    flex-grow:0;
+    width:100%;
+    height:92%;
+    background:#333;
+}
+
+ .game {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-grow:1;
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+ .iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    border:0;
+    height:100%;
+    width:100%;
+}
+
+ .gameicon {
+    border-radius:var(--borderRadius,8px);
+    background:var(--grey-5);
+    margin:0 8px 0 0;
+    width:40px;
+    height:40px;
+    transition: transform 0.5s;
+}
+
+ .gameicon:hover {
+    transform:scale(1) translate(0,-4px);
+}
+
+ .margin {
+    margin:auto 0;
+}
+
+ .flex {
+    display:flex;
+}
+
+ .titletext {
+    margin:0;
+    font:700 1em/1em Torus, sans-serif;
+    padding:0 10px 0 0;
+    color:#ffffff;
+}
+
+ .bytext {
+    display:block;
+    color: #cfcfcf;
+    font-size:12px;
+    line-height:16px;
+    margin:4px 0 0;
+    letter-spacing:.3px;
+    font:100 12px/12px Torus, sans-serif;
+}
+
+.fullscreenbtn {
+    border-radius:5px;
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+    margin-top: 21px;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+  }
+  .fullscreenbtn:hover {
+    transform: scaleX(1.2) scaleY(1.2) rotate(-10deg);
+  
+  }
+  
+  .reloadbtn {
+    height: 25px;
+    width: 25px;
+    margin-right: 25px;
+    margin-top: 21px;
+    cursor: pointer;
+    transition: transform .55s ease-in-out;
+  }
+  .reloadbtn:hover {
+    transform: scaleX(1.2) scaleY(1.2) rotate(360deg);
+  }
+
+  
+  .navbar {
+    height: 56px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+  
+  .navitems {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    gap: 12px;
+    background: #171717;
+  }
+  
+  .navlogo {
+    height: 50px;
+    border-radius: 15px;
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    user-select: none;
+    transition: transform 0.5s;
+  }
+  
+  .navitem {
+    border-radius: 15px;
+    padding: 10px 8px;
+    font-size: 15px;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    color: #FFFFFF;
+    transition: transform 0.5s;
+  }
+  
+  .navitem:hover {
+    transform: scaleX(1.2) scaleY(1.2);
+    background: linear-gradient(45deg, #949292, #616161);
+  
+  }
+  
+  .navitem[current] {
+    background: linear-gradient(45deg, #949292, #616161);
+    color: #FFFFFF;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  
+  body{
+      padding:0;
+      margin:0;
+      background-color: 171717;
+  }
+  h1,h2,h3,h4,p2,a,li,label{
+      font:500 1em/1em Torus, sans-serif;
+  }
