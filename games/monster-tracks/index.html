@@ -31,7 +31,7 @@
     <div class="navbar">
       <div class="navitems">
         <iframe
-          src="/iframe/navbarlogo.index.html"
+     src="/iframe/navbarlogo.index.html"
           frameborder="0"
           class="navlogo"
         ></iframe>
@@ -44,62 +44,51 @@
         <a href="/credits"><div class="navitem">Credits</div></a>
       </div>
     </div>
-    <div class="tgcgame">
-      <div class="game">
-        <div class="gameiframe">
-          <iframe
-            id="gameframe"
-            allowfullscreen=""
-            allow="autoplay; fullscreen; camera; focus-without-user-activation *; monetization; gamepad; keyboard-map *; xr-spatial-tracking; clipboard-write"
-            scrolling="no"
-            class="iframe"
-            sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-scripts allow-same-origin allow-downloads"
-            src="/tgc-assets/gamestorage/monster-tracks/"
-          >
-          </iframe>
+<div class="tgcgame">
+  <div class="game">
+    <div class="gameiframe">
+      <iframe
+        id="gameframe"
+        allowfullscreen=""
+        allow="autoplay; fullscreen; camera; focus-without-user-activation *; monetization; gamepad; keyboard-map *; xr-spatial-tracking; clipboard-write"
+        scrolling="no"
+        class="iframe"
+        sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-scripts allow-same-origin allow-downloads"
+        src="/tgc-assets/gamestorage/monster-tracks/">
+      </iframe>
+    </div>
+  </div>
+  <div class="gamebar">
+    <div class="gametext">
+      <img src="/images/monstertracks.png" class="gameicon"/>
+      <div class="margin">
+        <div class="flex">
+          <h1 class="titletext">Monster Tracks</h1>
         </div>
-      </div>
-      <div class="gamebar">
-        <div class="gametext">
-          <img src="/images/monstertracks.png" class="gameicon" />
-          <div class="margin">
-            <div class="flex">
-              <h1 class="titletext">Monster Tracks</h1>
-            </div>
-            <span class="bytext">By Martin Magni</span>
-          </div>
-        </div>
-
-        <button1 id="reloadbtn">
-          <img src="/images/reload.png" class="reloadbtn" border="0" />
-
-          <button1 onclick="openFullscreen();" type="fullscreen">
-            <img
-              src="/images/fullscreen.png"
-              class="fullscreenbtn"
-              border="0"
-            />
-
-            <script>
-              var elem = document.getElementById("gameframe");
-              function openFullscreen() {
-                if (elem.requestFullscreen) {
-                  elem.requestFullscreen();
-                } else if (elem.webkitRequestFullscreen) {
-                  elem.webkitRequestFullscreen();
-                } else if (elem.msRequestFullscreen) {
-                  elem.msRequestFullscreen();
-                }
-              }
-
-              function reload() {
-                document.getElementById("gameframe").src += "";
-              }
-              reloadbtn.onclick = reload;
-            </script>
-          </button1></button1
-        >
+        <span class="bytext">By Martin Magni</span>
       </div>
     </div>
-  </body>
-</html>
+           
+           
+  <button1 id="reloadbtn"> <img src="/images/reload.png" class="reloadbtn" border="0" />
+  
+          
+<button1 onclick="openFullscreen();" type="fullscreen"> <img src="/images/fullscreen.png" class="fullscreenbtn" border="0" />
+
+<script>
+var elem = document.getElementById("gameframe");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) {
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) {
+    elem.msRequestFullscreen();
+  }
+}
+
+  function reload() {
+  document.getElementById('gameframe').src += '';
+  }
+  reloadbtn.onclick = reload;
+</script>
